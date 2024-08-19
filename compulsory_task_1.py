@@ -6,10 +6,12 @@ class Course:
     location = "Cape Town"
 
     def contact_details(self):
-        print(f'''\nPlease contact us by visiting {self.contact_website}''')
+        print(f'''
+Please contact us by visiting {self.contact_website}''')
         
     def location(self):
-        print(f'''\nOur Head Office is based in {self.location}''')
+        print(f'''
+Our Head Office is based in {self.location}''')
 
 #Create Sub-Class
 class OOPCourse(Course):
@@ -20,11 +22,12 @@ class OOPCourse(Course):
     course_id = "#12345"
         
     def trainer_details(self):
-        print(f'''\nThis course is the {self.name} which focuses
+        print(f'''
+This course is the {self.name} which focuses
 on {self.description} lead by {self.trainer}''')
         
     def show_course_id(self):
-        print(f"\nThe ID for the course is: {self.course_id}")
+        print(f"The ID for the course is: {self.course_id}\n")
         
 #Displays course defaults inside terminal
 course_1 = OOPCourse()
